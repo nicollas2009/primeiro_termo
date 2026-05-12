@@ -1,0 +1,2 @@
+Estudar Python hoje!
+ler sobre Clean code.
