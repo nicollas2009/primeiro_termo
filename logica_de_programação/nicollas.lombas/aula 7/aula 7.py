@@ -85,7 +85,7 @@ while True:
             print("ERRO: Método de entrada inválido.")
 
     except ValueError:
-        print("Erro Encontrado, Tente Novamente.")
+      print("Erro Encontrado, Tente Novamente.")
         continue
 
 # ----------------------------------------------------------------------------------------
