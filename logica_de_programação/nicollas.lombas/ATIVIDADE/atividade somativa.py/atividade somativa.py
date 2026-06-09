@@ -108,49 +108,110 @@
 # 3.Conversor de Unidade: O sistema lê uma pressão em Bar. Converta para PSI (1 Bar
 # ≈ 14.5 PSI) e exiba com duas casas decimais.
 
-import tkinter as tk
-from tkinter import messagebox
+# import tkinter as tk
+# from tkinter import messagebox
 
-def calcular_producao():
+# def converter_para_psi():
     
-    bar = bar.get()
-
-    
-    if bar == "":
-        messagebox.showwarning("Aviso", "digite a quantidade de bar")
-        return
+#     valor_digitado = entry_bar.get()
 
     
-    
+#     if valor_digitado == "":
+#         messagebox.showwarning("Aviso", "Digite a quantidade de Bar")
+#         return
 
-    
-    PSI = 14.5
-    total_produzido = bar * PSI 
+#     try:
+       
+#         bar = float(valor_digitado)
+#         fator_psi = 14.5
+#         psi = bar * fator_psi 
+        
+       
+#         messagebox.showinfo("Resultado", f"{bar} Bar equivale a {psi:.2f} PSI")
+        
+#     except ValueError:
+       
+#         messagebox.showerror("Erro", "Por favor, insira apenas números válidos (use ponto para decimais).")
 
+
+# janela = tk.Tk()
+# janela.title("Conversor de Bar para PSI")
+# janela.geometry("400x150")
+# janela.configure(bg="lightblue")
+
+
+# lbl_bar = tk.Label(janela, text="Quantidade de Bar:", bg="lightblue", font=("Arial", 10))
+# lbl_bar.grid(row=0, column=0, padx=10, pady=20)
+
+
+# entry_bar = tk.Entry(janela, font=("Arial", 10))
+# entry_bar.grid(row=0, column=1, padx=10, pady=20)
+
+
+# btn_calcular = tk.Button(
+#     janela,
+#     text="Calcular PSI",
+#     command=converter_para_psi,
+#     font=("Arial", 10, "bold")
+# )
+# btn_calcular.grid(row=1, column=0, columnspan=2, pady=10)
+
+# janela.mainloop()
+
+
+
+# 4. Média de Qualidade: Peça 3 notas de inspeção de uma peça (0 a 10). Exiba a média
+# aritmética simples delas.
+  
+
+# import tkinter as tk
+# from tkinter import messagebox
+
+# def calcular_media():
+   
+#     n1 = float(entry_nota1.get())
+#     n2 = float(entry_nota2.get())
+#     n3 = float(entry_nota3.get())
     
    
-    )
+#     media = (n1 + n2 + n3) / 3
+    
+   
+#     messagebox.showinfo(
+#         "Média de Qualidade",
+#         f"A média das notas é: {media}"
+#     )
+
+# janela = tk.Tk()
+# janela.title("Média de Qualidade")
+# janela.geometry("350x200")
 
 
-janela = tk.Tk()
-janela.title("Cálculo de Produção")
-janela.geometry("450x200")
-janela.configure(bg="lightblue")
+# lbl_1 = tk.Label(janela, text="Nota 1:")
+# lbl_1.grid(row=0, column=0, padx=10, pady=10)
+# entry_nota1 = tk.Entry(janela)
+# entry_nota1.grid(row=0, column=1, padx=10, pady=10)
 
 
-lbl_pecas = tk.Label(janela, text="Total de PSI")
-lbl_pecas.grid(row=0, column=0, padx=10, pady=20)
+# lbl_2 = tk.Label(janela, text="Nota 2:")
+# lbl_2.grid(row=1, column=0, padx=10, pady=10)
+# entry_nota2 = tk.Entry(janela)
+# entry_nota2.grid(row=1, column=1, padx=10, pady=10)
 
 
-pecas_hora = tk.Entry(janela)
-pecas_hora.grid(row=0, column=1, padx=10, pady=20)
-
-btn_calcular = tk.Button(
-    janela,
-    text="Calcular PSI (14.5)",
-    command=calcular_producao
-)
-btn_calcular.grid(row=1, column=0, columnspan=2, pady=20)
+# lbl_3 = tk.Label(janela, text="Nota 3:")
+# lbl_3.grid(row=2, column=0, padx=10, pady=10)
+# entry_nota3 = tk.Entry(janela)
+# entry_nota3.grid(row=2, column=1, padx=10, pady=10)
 
 
-janela.mainloop()
+# btn_calcular = tk.Button(janela, text="Calcular Média", command=calcular_media)
+# btn_calcular.grid(row=3, column=0, columnspan=2, pady=10)
+
+# janela.mainloop()
+
+
+# 5. Termostato Inteligente: Peça a temperatura de um motor.
+# ● Abaixo de 40°C: "Baixa carga".
+# ● Entre 40°C e 70°C: "Normal".
+# ● Acima de 70°C: "ALERTA: Resfriamento Ativado!".
